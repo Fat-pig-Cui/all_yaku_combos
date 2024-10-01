@@ -169,6 +169,5 @@ for info in table_5_info:
     for i in range(len(table_5) - info["fan"]):
         new_table[i + info["fan"]] += table_5[i] * info["num"]
 
-
 print(new_table)
 print(sum(new_table))
