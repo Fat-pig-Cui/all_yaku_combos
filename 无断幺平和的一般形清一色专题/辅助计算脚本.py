@@ -118,6 +118,30 @@ table_5 = [
     0,  # 20
 ]
 
+table_6 = [
+    0,  # 0
+    0,  # 1
+    0,  # 2
+    0,  # 3
+    0,  # 4
+    0,  # 5
+    1,  # 6
+    1,  # 7
+    1,  # 8
+    0,  # 9
+    1,  # 10
+    0,  # 11
+    0,  # 12
+    0,  # 13
+    0,  # 14
+    0,  # 15
+    0,  # 16
+    0,  # 17
+    0,  # 18
+    0,  # 19
+    0,  # 20
+]
+
 table_info = [
     {"fan": 1, "num": 2},
     {"fan": 2, "num": 3},
@@ -126,9 +150,8 @@ table_info = [
 
 table_2_info = [
     {"fan": 1, "num": 1},
-    {"fan": 2, "num": 2},
-    {"fan": 3, "num": 2},
-    {"fan": 4, "num": 1},
+    {"fan": 2, "num": 1},
+    {"fan": 3, "num": 1},
 ]
 
 table_3_info = [
@@ -143,6 +166,12 @@ table_4_info = [
 ]
 
 table_5_info = [
+    {"fan": 4, "num": 1},
+]
+
+table_6_info = [
+    {"fan": 2, "num": 1},
+    {"fan": 3, "num": 1},
     {"fan": 4, "num": 1},
 ]
 
@@ -168,6 +197,10 @@ for info in table_4_info:
 for info in table_5_info:
     for i in range(len(table_5) - info["fan"]):
         new_table[i + info["fan"]] += table_5[i] * info["num"]
+
+for info in table_6_info:
+    for i in range(len(table_6) - info["fan"]):
+        new_table[i + info["fan"]] += table_6[i] * info["num"]
 
 print(new_table)
 print(sum(new_table))

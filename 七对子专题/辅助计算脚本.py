@@ -8,7 +8,7 @@ table = [
     0,
     1,
     1,
-    1,
+    0,
     0,
     0,
     0,
@@ -32,7 +32,7 @@ table_all = [
     [],
     [['七对', '混色', '混老']],
     [['七对', '清色']],
-    [['七对', '清色', '断幺']],
+    [],  # Higher-scoring standard-hand interpretation always wins.
     [],
     [],
     [],
